@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me — Jinglin Li</title>
+  <meta name="description" content="Get in touch with Jinglin Li — collaborations, questions, or just to say hi.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✉️</text></svg>">
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo"><span class="dot"></span>Jinglin Li</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact Me</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Let's be in touch</span>
+        <h1>Contact Me</h1>
+        <p>Have a project in mind, a question, or just want to say hi?
+           My inbox is always open — I'd love to hear from you. 💌</p>
+      </div>
+    </div>
+
+    <section style="padding-top:16px;">
+      <div class="container contact-grid">
+
+        <!-- Left: contact details -->
+        <div class="reveal">
+          <ul class="contact-list">
+            <li>
+              <span class="ci">📧</span>
+              <span>Email<small><a href="mailto:hello@jinglinli.example">hello@jinglinli.example</a></small></span>
+            </li>
+            <li>
+              <span class="ci">📍</span>
+              <span>Based in<small>Portland, Oregon — happy to work remotely worldwide</small></span>
+            </li>
+            <li>
+              <span class="ci">⏱️</span>
+              <span>Response time<small>Usually within a day or two, tea permitting</small></span>
+            </li>
+          </ul>
+
+          <div class="socials">
+            <a class="social-btn" href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">🐙</a>
+            <a class="social-btn" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">💼</a>
+            <a class="social-btn" href="https://dribbble.com/" target="_blank" rel="noopener" aria-label="Dribbble">🏀</a>
+            <a class="social-btn" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+          </div>
+
+          <div class="panel" style="margin-top:24px; padding:24px;">
+            <p style="font-size:.95rem;">
+              <strong style="color:var(--ink);">Prefer email directly?</strong><br>
+              Click the message icon or write to the address above —
+              no contact forms were harmed in the making of this website. 😄
+            </p>
+          </div>
+        </div>
+
+        <!-- Right: message form -->
+        <div class="panel reveal d1">
+          <div class="panel-head">
+            <span class="emoji">✏️</span>
+            <h2>Send me a message</h2>
+          </div>
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="cf-name">Your name</label>
+                <input type="text" id="cf-name" name="name" placeholder="Jamie Lee" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="cf-email">Your email</label>
+                <input type="email" id="cf-email" name="email" placeholder="jamie@example.com" autocomplete="email" required>
+              </div>
+            </div>
+            <div class="field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" placeholder="Tell me a little about what you have in mind…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send message 🚀</button>
+            <p id="form-note" class="form-note" aria-live="polite"></p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-fun">
+        <span class="pill">🎉 Fun fact about me</span>
+        <p>I believe &ldquo;lifelong learning&rdquo; isn&rsquo;t a buzzword &mdash;
+           it&rsquo;s my daily routine.</p>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Jinglin Li · Made with care and too much tea</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

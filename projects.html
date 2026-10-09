@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Jinglin Li</title>
+  <meta name="description" content="Selected design and development projects by Jinglin Li.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗂️</text></svg>">
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo"><span class="dot"></span>Jinglin Li</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Things I've made</span>
+        <h1>Projects</h1>
+
+      </div>
+    </div>
+
+    <section class="todo-section" style="padding-top:12px;">
+      <div class="container">
+        <div class="todo-app panel">
+          <div class="panel-head">
+            <span class="emoji">📝</span>
+            <h2>To-Do List</h2>
+          </div>
+
+          <!-- Input form -->
+          <div class="todo-form">
+            <button type="button" id="todo-emoji-btn" class="todo-emoji-btn" aria-haspopup="true" aria-expanded="false" aria-label="Pick an emoji">
+              <span id="todo-emoji-label">✨</span>
+            </button>
+            <input type="text" id="todo-input" class="todo-input"
+                   placeholder="What needs to be done?" maxlength="120"
+                   aria-label="Task description">
+            <button type="button" id="todo-date-btn" class="todo-date-btn" aria-haspopup="true" aria-expanded="false">
+              <span aria-hidden="true">📅</span>
+              <span id="todo-date-label">Pick a date</span>
+            </button>
+            <button type="button" id="todo-add" class="btn btn-primary">Add</button>
+          </div>
+
+          <!-- Emoji palette -->
+          <div id="todo-emoji-pop" class="emoji-pop" hidden>
+            <div class="emoji-grid" id="emoji-grid"></div>
+          </div>
+
+          <!-- Priority picker -->
+          <div class="todo-priority" role="group" aria-label="Priority">
+            <span class="priority-label">Priority:</span>
+            <button type="button" class="prio-btn" data-prio="low">Low</button>
+            <button type="button" class="prio-btn active" data-prio="medium">Medium</button>
+            <button type="button" class="prio-btn" data-prio="high">High</button>
+          </div>
+
+          <!-- Calendar popover -->
+          <div id="todo-calendar" class="calendar" hidden>
+            <div class="cal-header">
+              <button type="button" id="cal-prev" aria-label="Previous month">‹</button>
+              <span id="cal-month-year" class="cal-title"></span>
+              <button type="button" id="cal-next" aria-label="Next month">›</button>
+            </div>
+            <div class="cal-weekdays" aria-hidden="true">
+              <span>Su</span><span>Mo</span><span>Tu</span><span>We</span>
+              <span>Th</span><span>Fr</span><span>Sa</span>
+            </div>
+            <div class="cal-grid" id="cal-grid" role="grid"></div>
+          </div>
+
+          <!-- Task list -->
+          <ul id="todo-list" class="todo-list" aria-live="polite"></ul>
+
+          <!-- Empty state -->
+          <p id="todo-empty" class="todo-empty">No tasks yet — add one above!</p>
+
+          <!-- Clear all -->
+          <div class="todo-footer">
+            <span id="todo-count"></span>
+            <button type="button" id="todo-clear" class="todo-clear">Clear all</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-fun">
+        <span class="pill">🎉 Fun fact about me</span>
+        <p>I believe &ldquo;lifelong learning&rdquo; isn&rsquo;t a buzzword &mdash;
+           it&rsquo;s my daily routine.</p>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Jinglin Li · Made with care and too much tea</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/todo.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
